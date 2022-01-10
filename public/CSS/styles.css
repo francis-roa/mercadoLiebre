@@ -46,25 +46,38 @@ header{
 
 div.top-header{
     padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 header picture.logo{
     display: block;
     width: 50%;
+    padding-right: 5px;
 }
 
-header .buscar .barra {
+header form.form{
+    width: 50%;
+    max-height: 40px;
+    display: flex;
     background-color: var(--blanco);
-    border: 1px solid var(--negro);
-    padding: 2px;
-    width: 170px;
+    align-items: center;
+    font-size: var(--texto);
+    border: 1px solid var(--blanco);
+    border-radius: 5px;
+    padding: 5px;
 }
 
-header .buscar .enviar {
+header form.form input{
+    width: 90%;
+    border:none
+}
+header form.form button{
     background-color: var(--blanco);
-    border: 1px solid var(--negro);
-    padding: 2px;
-    width: 15px;
+    color: var(--gris-oscuro);
+    border: none;
+    padding-left: 5px;
 }
 
 .nav_bar{
@@ -127,6 +140,11 @@ main{
     background-color: var(--gris-claro);
 }
 
+section h1{
+    display: block;
+    text-align: center;
+}
+
 main section article{
     background-color: var(--blanco);
     margin:10px 0px;
@@ -152,6 +170,7 @@ main section article div i {
     border: 2px solid var(--verde);
     color: var(--verde);
     font-size: var(--texto);
+    background-color: var(--blanco);
     padding: 8px;
     position: absolute;
     right: 20px;
@@ -167,10 +186,12 @@ main section article div i:hover {
     border-top: solid 1px var(--gris-claro);
     width: 100%;
     padding: 15px;
+    display: flex;
 }
 
 .precio{
     flex-grow: 0.3;
+    
     font-size: var(--precio);
 }
 
@@ -215,9 +236,31 @@ footer section{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    section h1{
+        display: block;
+        text-align: center;
+        width: 100%;
     }
     .product-container{
         flex-direction: column;
         max-width: 40%;
     }
+}
+
+@media(min-device-width:769px){
+    main section{
+        justify-content: space-around;
+    }
+    .product-container{
+        max-width: 20%;
+    }
+    footer div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
 }

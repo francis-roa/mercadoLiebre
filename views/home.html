@@ -15,19 +15,13 @@
             <picture class="logo">
                 <img src="images/logo-mercado-liebre.svg">
             </picture>
-            <!-- <div class="buscar">
-                <span>
-                    <div class="barra">Buscar productos, marcas y más</div>
-                    <div class="enviar"><i class="fas fa-search"></i></div>
-                </span>
-                
-            </div>-->
-            <form action="/register">
+
+            <form class="form" action="/register">
                 <input type="text" name="busqueda" placeholder="Buscar productos, marcas y más">
                 <button>
                     <div class="enviar"><i class="fas fa-search"></i></div>
                 </button>
-                <div class="barra">Buscar productos, marcas y más</div>
+                
             </form>
             <p>
                 <i class="fas fa-hand-holding-usd"></i> compra en cuotas y sin tarjetas de crédito 
@@ -68,15 +62,14 @@
     <img src="images/img-home-banner.jpg" id="imgMessage">
 
     <main>
-        <h1>Basado en tu última visita</h1>
         <section>
-            
+            <h1>Basado en tu última visita</h1>
             <article class="product-container">
                 <img src="images/img-cafetera-moulinex.jpg" alt="">
                 <div class="productos">
                     <i class="fas fa-truck"></i>
                     <p class="precio">$6.770</p>
-                    <p class="descuento">40% OFF</p>
+                    <p class="descuento">40% off</p>
                 </div>
             </article>
             <article class="product-container">
@@ -84,7 +77,7 @@
                 <div class="productos">
                     <i class="fas fa-truck"></i>
                     <p class="precio">$230.000</p>
-                    <p class="descuento">20% OFF</p>
+                    <p class="descuento">20% off</p>
                 </div>
             </article>
             <article class="product-container">
@@ -92,7 +85,7 @@
                 <div class="productos">
                     <i class="fas fa-truck"></i>
                     <p class="precio">%70.500</p>
-                    <p class="descuento">10% OFF</p>
+                    <p class="descuento">10% off</p>
                 </div>
             </article>
             <article class="product-container">
@@ -100,7 +93,7 @@
                 <div class="productos">
                     <i class="fas fa-truck"></i>
                     <p class="precio">$23.200</p>
-                    <p class="descuento">5% OFF</p>
+                    <p class="descuento">5% off</p>
                 </div>
             </article>
         </section>
@@ -112,7 +105,7 @@
                 <div class="productos">
                     <i class="fas fa-truck"></i>
                     <p class="precio">$6.770</p>
-                    <p class="descuento">40% OFF</p>
+                    <p class="descuento">40% off</p>
                 </div>
             </article>
             <article class="product-container">
@@ -120,7 +113,7 @@
                 <div class="productos">
                     <i class="fas fa-truck"></i>
                     <p class="precio">$230.000</p>
-                    <p class="descuento">20% OFF</p>
+                    <p class="descuento">20% off</p>
                 </div>
             </article>
             <article class="product-container">
@@ -128,7 +121,7 @@
                 <div class="productos">
                     <i class="fas fa-truck"></i>
                     <p class="precio">$70.500</p>
-                    <p class="descuento">10% OFF</p>
+                    <p class="descuento">10% off</p>
                 </div>
             </article>
             <article class="product-container">
@@ -136,7 +129,7 @@
                 <div class="productos">
                     <i class="fas fa-truck"></i>
                     <p class="precio">$23.200</p>
-                    <p class="descuento">5% OFF</p>
+                    <p class="descuento">5% off</p>
                 </div>
                 
             </article>
@@ -144,35 +137,37 @@
     </main>
     
     <footer>
-        <section>
-            <h1>Paga sin tarjeta o en efectivo</h1>
-            <div>
-                <i class="fas fa-credit-card fa-3x"></i>
-            </div>
-            <p>
-                Con MercadoLiebreCash tienes cuotas sin <br>
-                interes con tarjeta o efectivo en puntos de <br>
-                pago. ¡Y siempre es seguro!
-            </p>
-        </section>
-        <section>
-            <h1>Envio gratis desde los $2.500</h1>
-            <i class="fas fa-gift fa-3x"></i>
-            <p>
-                Solo por estar registrado en Mercado Liebre <br>
-                tienes envíos gratis en miles de productos. <br>
-                Es un beneficio de Mercado Liebre.
-            </p>
-        </section>
-        <section>
-            <h1>Seguridad de principio a fin</h1>
-            <i class="fas fa-user-shield fa-3x"></i>
-            <p>
-                ¿No te gusta? ¡Devuelvelo! En Mercado Liebre <br>
-                no hay nada que no puedas hacer porque estás <br>
-                siempre protegid@.
-            </p>
-        </section>
+        <div>
+            <section>
+                <h1>Paga sin tarjeta o en efectivo</h1>
+                <div>
+                    <i class="fas fa-credit-card fa-3x"></i>
+                </div>
+                <p>
+                    Con MercadoLiebreCash tienes cuotas sin <br>
+                    interes con tarjeta o efectivo en puntos de <br>
+                    pago. ¡Y siempre es seguro!
+                </p>
+            </section>
+            <section>
+                <h1>Envio gratis desde los $2.500</h1>
+                <i class="fas fa-gift fa-3x"></i>
+                <p>
+                    Solo por estar registrado en Mercado Liebre <br>
+                    tienes envíos gratis en miles de productos. <br>
+                    Es un beneficio de Mercado Liebre.
+                </p>
+            </section>
+            <section>
+                <h1>Seguridad de principio a fin</h1>
+                <i class="fas fa-user-shield fa-3x"></i>
+                <p>
+                    ¿No te gusta? ¡Devuelvelo! En Mercado Liebre <br>
+                    no hay nada que no puedas hacer porque estás <br>
+                    siempre protegid@.
+                </p>
+            </section>
+        </div>
         <p id="Copyright">
             Copyright &copy 1999-2020 MercadoLiebre S.R.L
         </p>

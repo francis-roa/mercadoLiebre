@@ -257,7 +257,7 @@ footer section{
     text-align: left;
 }
 
-@media(min-device-width:361px){
+@media screen and (min-device-width:361px){
     main article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         transition: 1s;
@@ -311,7 +311,7 @@ footer section{
     }
 }
 
-@media(min-device-width:769px){
+@media screen and (min-device-width:769px){
     main section{
         justify-content: space-around;
     }

@@ -17,4 +17,4 @@ app.get('/register',(req,res)=>
 app.get('/login',(req,res)=>
 {res.sendFile(path.join(__dirname,'views/login.html'))})
 
-app.listen(3000,()=>console.log('Servidor activo'));
+app.listen(process.env.PORT,()=>console.log('Servidor activo'));

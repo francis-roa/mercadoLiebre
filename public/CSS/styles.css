@@ -38,6 +38,13 @@ p{
     font-size: var(--texto);
 }
 
+h3 {
+    font-size: var(--descripcion);
+    font-family: var(--roboto);
+    color: var(--gris-oscuro);
+    padding: 15px;
+    
+}
 
 /*HEADER*/
 header{
@@ -73,6 +80,7 @@ header form.form input{
     width: 90%;
     border:none
 }
+
 header form.form button{
     background-color: var(--blanco);
     color: var(--gris-oscuro);
@@ -150,6 +158,15 @@ main section article{
     margin:10px 0px;
 }
 
+.description {
+    opacity: 0;
+    transition: all 1s;
+}
+
+main section article:hover .description {
+    opacity: 1;
+}
+
 main section{
     margin-left: 10%;
     margin-right: 10%;
@@ -201,6 +218,22 @@ main section article div i:hover {
     color: var(--verde);
 }
 
+#reg{
+    text-align: center;
+}
+
+#reg input{
+    margin: 20px 0px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#reg .logInForm .send:hover{
+    transition: 1s;
+    background-color:#0022AA;
+    color: var(--blanco);
+}
+
 /*FOOTER*/
 footer{
     background-color: var(--blanco);
@@ -209,6 +242,11 @@ footer{
 
 footer i{
     color: var(--celeste);
+}
+
+footer i:hover{
+    transition: 1s;
+    color: var(--azul);
 }
 
 footer section{
@@ -220,8 +258,9 @@ footer section{
 }
 
 @media(min-device-width:361px){
-    main article{
+    main article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: 1s;
     } 
     .nav_bar{
         display: block;
@@ -246,6 +285,29 @@ footer section{
     .product-container{
         flex-direction: column;
         max-width: 40%;
+    }
+    header form.form{
+        max-width: 30%;
+        background-color: var(--amarillo);
+        border: none;
+    }
+    header form.form input{
+        width: 88%;
+        margin-right: 5%;
+        border: solid 1px var(--negro);
+        border-bottom-left-radius:5px ;
+        border-top-left-radius:5px ;
+    }
+    header form.form button{
+        width: 7%;
+        padding: 0px;
+        border: 1px solid var(--negro);
+    }
+    .enviar i{
+        width: 100%;
+    }
+    body header div p{
+        padding-left: 5px;
     }
 }
 
